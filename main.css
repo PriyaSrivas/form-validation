@@ -1,0 +1,148 @@
+/* 
+***************************************    [Table of Contents]   *******************************
+
+1. Root Variables
+2. Body and some general stuff
+3. Header
+    3.1 Logo
+    3.2 Dropdown
+    3.3 Profile Image
+4. Banner
+5. Congo Page
+*/
+
+
+/* 1. Root Variables */
+:root {
+--main-font-family: 'Poppins', 'sans-serif';
+--main-color: #fff;
+--main-heading-text-decoration: underline;
+--main-heading-font-family: 'Verdana', 'sans-serif';
+--logo-height: 3rem;
+--logo-width: auto;
+--logo-border-radius: 50%;
+--profile-dropdown-width: 0rem;
+--icons-color: #fff;
+--sub-heading-font-size: 2rem;
+--profile-image-height: 2.3rem;
+--profile-image-width: 2.3rem;
+--profile-image-border-radius: 50%;
+}
+
+/* 2. Body and some general stuff */
+body {
+font-family: var(--main-font-family);
+}
+
+h1 {
+font-family: var(--main-heading-font-family);
+}
+
+h2 {
+font-size: var(--sub-heading-font-size);
+}
+
+a, a:hover {
+color: var(--icons-color);
+text-decoration: var(--main-heading-text-decoration);
+}
+
+
+/* 3. Header */
+.logo-size {
+height: var(--logo-height);
+width: var(--logo-width);
+border-radius: var(--logo-border-radius);
+}
+
+.profile-dropdown {
+min-width: var(--profile-dropdown-width);
+}
+
+.dropdown-toggle::after {
+color: transparent;
+}
+
+.profile-image {
+height: var(--profile-image-height);
+width: var(--profile-image-width);
+border-radius: var(--profile-image-border-radius);
+}
+
+/* 4. Banner */
+.custom-banner-image {
+background-image: url('images/banner.jpg');
+}
+
+.custom-banner-image {
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50% 50%;
+position: relative;
+width: 100%;
+height: auto;
+display: block;
+}
+
+.custom-banner-image .banner-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+.custom-banner-image .banner-text {
+padding: 100px 0 45px;
+color: #eee;
+text-align: center;
+position: relative;
+z-index: 1;
+width: 100%;
+font-family: sans-serif;
+}
+
+.custom-banner-image .banner-text{
+color: #fff;
+}
+
+@media (max-width: 767px){
+.header-container.container-fluid .row-fluid .page-center {
+padding: 0;
+}
+
+.custom-banner-image .banner-text {
+padding: 50px 15px;
+}
+}
+
+/* 5. Congo Page */
+body, html {
+height: 100%;
+margin: 0;
+}
+
+* {
+box-sizing: border-box;
+}
+
+.bg-image {
+background-image: url("images/code.jpeg");
+filter: blur(8px);
+-webkit-filter: blur(8px);
+height: 100%; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.card {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 2;
+padding: 20px;
+text-align: center;
+}
