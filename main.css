@@ -18,9 +18,8 @@
 --main-color: #fff;
 --main-heading-text-decoration: underline;
 --main-heading-font-family: 'Verdana', 'sans-serif';
---logo-height: 3rem;
+--logo-height: 2rem;
 --logo-width: auto;
---logo-border-radius: 50%;
 --profile-dropdown-width: 0rem;
 --icons-color: #fff;
 --sub-heading-font-size: 2rem;
@@ -52,7 +51,6 @@ text-decoration: var(--main-heading-text-decoration);
 .logo-size {
 height: var(--logo-height);
 width: var(--logo-width);
-border-radius: var(--logo-border-radius);
 }
 
 .profile-dropdown {
